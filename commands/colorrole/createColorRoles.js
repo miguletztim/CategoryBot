@@ -9,7 +9,7 @@ module.exports = {
   guildOnly: true,
   args: true,
 
-  execute(message, client) {
+  async execute(message, client) {
     const botRole = findBotRole(message.guild, client);
 
     if(!botRole) {
@@ -21,8 +21,8 @@ module.exports = {
     const position = botRole.position;
     const baseRoles = message.mentions.roles;
 
-    baseRoles.forEach(baseRole => {
-      createColorRole(author, position, baseRole);
-    })
+    for(baseRole of baseRoles) {
+      await createColorRole(author, position, baseRole);
+    }
   }
 }
