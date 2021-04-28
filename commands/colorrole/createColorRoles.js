@@ -19,7 +19,7 @@ module.exports = {
 
     const author = message.member.user.username;
     const position = botRole.position;
-    const baseRoles = message.mentions.roles;
+    const baseRoles = message.mentions.roles.array();
 
     for(baseRole of baseRoles) {
       await createColorRole(author, position, baseRole);
