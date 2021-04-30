@@ -1,13 +1,14 @@
-const findColorRole = require("./findColorRole.js")
+const findColorRole = require('./findColorRole.js');
+const {noColor} = require('../../config.json');
 
 module.exports = function(username, position, baseRole) {
-  // console.log(`BOT ROLE POSITION:  ${botRole.position}`); // FIXBUG: doesn't change => if more then one role is created, it doesn't get placed at the right position
 
   if(!findColorRole(baseRole)) {
+    const hexColor = baseRole.hexColor == noColor ? '#99aab5' : baseRole.hexColor;
     return baseRole.guild.roles.create({
       data: {
-        name: baseRole.name + baseRole.hexColor,
-        color: baseRole.color,
+        name: baseRole.name + hexColor,
+        color: hexColor,
         permissions: [],
         position: position,
       },
