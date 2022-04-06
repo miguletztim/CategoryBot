@@ -1,5 +1,5 @@
 # CategoryBot
-A category bot for Discord
+Add categories to your Discord Roles
 
 This is just the code for the bot. It isn't online right now.
 
