@@ -45,8 +45,8 @@ module.exports = {
       "```updateAllMembers - Updates every member's roles```" +
       
       '\n**SOCIALS**' +
-      '```Creator: Skybertronic```' +
-      '```Github: github.com/Skybertronic```' +
+      '```Creator: Tim Miguletz```' +
+      '```Github: github.com/timmiguletz```' +
       '```Discord: discord.gg/SJ9tmPQt3E```'
     ;
 
