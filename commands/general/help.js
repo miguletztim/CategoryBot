@@ -46,7 +46,7 @@ module.exports = {
       
       '\n**SOCIALS**' +
       '```Creator: Tim Miguletz```' +
-      '```Github: github.com/timmiguletz```' +
+      '```Github: github.com/miguletztim```' +
       '```Discord: discord.gg/SJ9tmPQt3E```'
     ;
 
